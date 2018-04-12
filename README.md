@@ -157,3 +157,12 @@ Check out `package.json`
   }
 }
 ```
+
+- build - seems like gulp is used here
+- start, dev, prod runs the bundled app
+- Would be nice if there is a continous compilation mode out of the box. Maybe
+  `npm start` can be used?
+- Default to mocha test runner. Would it be easy to switch to jest or jasmine?
+- coverage :+1:
+
+Now lets try running the app.
