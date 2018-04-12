@@ -238,8 +238,8 @@ http://localhost:3000/
 ![Screenshot of webpage](assets/basis-client-screenshot.png)
 
 - Clean UI. The navigation header and slide-out drawer looks good.
-- Watch mode to hot reload the UI would be time-saving. Currently build takes
-  about 8 seconds + time to refresh (webpack)
+- Watch mode + hot reload would be time-saving. Currently build takes
+  about 8 seconds + time to refresh in browser.
 - `npm run dev` seems to do nothing.
 - NODE_ENV is currently 'production' in `npm start`. Is there a way to run in
   development mode?
