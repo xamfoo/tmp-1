@@ -163,7 +163,6 @@ Check out `package.json`
 - `scripts`
   - `npm run build` - seems like gulp is used here
   - `npm start`, `npm run dev`, `npm run prod` runs the bundled app.
-    - `npm run dev` seems to freeze.
   - Would be nice if there is a continous compilation mode out of the box. Maybe
     `npm start` can be used?
   - Defaults to mocha test runner. Would it be easy to switch to jest or jasmine?
@@ -239,7 +238,12 @@ http://localhost:3000/
 ![Screenshot of webpage](assets/basis-client-screenshot.png)
 
 - Clean UI. The navigation header and slide-out drawer looks good.
-- Watch mode to hot reload the UI would be nice. (webpack)
+- Watch mode to hot reload the UI would be time-saving. Currently build takes
+  about 8 seconds + time to refresh (webpack)
+- `npm run dev` seems to do nothing.
+- NODE_ENV is currently 'production' in npm start. Is there a way to run in
+  development mode?
+- PropTypes doesn't seem to be working. Could be because of production mode.
 
 Now lets take a look at the UI code.
 
@@ -413,6 +417,3 @@ export default () => dispatch => (
 
 - The catch block currently has the same result as not having the catch block.
 - Might want to dispatch an error action in the catch block.
-
-```
-```
