@@ -171,6 +171,8 @@ Check out `package.json`
 
 Now lets try running the app.
 
+**npm run build**
+
 ```ShellSession
 > awesome-app@0.0.1 build ~/awesome-app
 > eslint config/*.js gulpfile.babel.js && gulp build:full
@@ -215,3 +217,19 @@ Now lets try running the app.
 [00:48:02] Finished 'build:full' after 4.22 s
 npm run build  7.97s user 0.71s system 106% cpu 8.123 total
 ```
+
+**npm start**
+
+```
+> awesome-app@0.0.1 start ~/awesome-app
+> node dist/bin/start-awesome-app
+
+info: [STARTUP] INIT: bootstrapped config for env: LOCAL
+info: [STARTUP] INIT: wired routes for module 'home'
+info: [SERVER_] START: listening on port 3000
+```
+
+http://localhost:3000/
+
+
+![Screenshot of webpage](assets/basis-client-screenshot.png)
