@@ -1,6 +1,8 @@
-**Cool!**
+**Cool CLI interface!**
 
 ![Image of basis CLI](assets/basis.gif)
+
+**Ok now what?**
 
 ```
 .
