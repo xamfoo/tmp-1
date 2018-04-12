@@ -238,4 +238,8 @@ http://localhost:3000/
 - Clean UI. The navigation header and slide-out drawer looks good.
 - Watch mode to hot reload the UI would be nice. (webpack)
 
-Now lets try adding some UI code. How about a todo app?
+Now lets take a look at the UI code and see if we can change something.
+
+src/client/CssBaseline
+```
+```
