@@ -285,3 +285,28 @@ export default ({ routes }) => (
 - Would be good if we have a larger app example (in this or another repo) for
   reference.
 - How should we structure the application into modules?
+
+Next, we look at `src/client/modules/shell/index.js` to see what makes up a
+module.
+
+```JSX
+import { routeTypes } from 'basis-client';
+
+import reducers from './reducers';
+import Shell from './components/shell';
+
+export default {
+
+  actions: undefined,
+  initialise: () => ({
+
+    key: 'shell',
+    route: {
+      path: '/',
+      component: Shell,
+      type: routeTypes.shellHub
+    },
+    reducers
+  })
+};
+```
