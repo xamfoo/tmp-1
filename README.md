@@ -79,6 +79,8 @@ Lets check out the directory.
 
 - `config` directory
   - webpack config found! Looks clean and simple.
+    - Highly recommend adding the following config to get source maps
+    `devtool: 'cheap-module-eval-source-map'`
   - Oh nginx configuration?
   - Should I mess with the various `settings.*.js`?
 - `gulpfile.babel.js` gulpfile written in ES6 :)
@@ -160,7 +162,8 @@ Check out `package.json`
 
 - `scripts`
   - `npm run build` - seems like gulp is used here
-  - `npm start`, `npm run dev`, `npm run prod` runs the bundled app
+  - `npm start`, `npm run dev`, `npm run prod` runs the bundled app.
+    - `npm run dev` seems to freeze.
   - Would be nice if there is a continous compilation mode out of the box. Maybe
     `npm start` can be used?
   - Defaults to mocha test runner. Would it be easy to switch to jest or jasmine?
@@ -410,3 +413,6 @@ export default () => dispatch => (
 
 - The catch block currently has the same result as not having the catch block.
 - Might want to dispatch an error action in the catch block.
+
+```
+```
