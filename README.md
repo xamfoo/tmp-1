@@ -231,5 +231,6 @@ info: [SERVER_] START: listening on port 3000
 
 http://localhost:3000/
 
-
 ![Screenshot of webpage](assets/basis-client-screenshot.png)
+
+- Clean UI. The navigation header and slide-out drawer looks good.
