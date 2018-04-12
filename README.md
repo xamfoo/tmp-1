@@ -85,6 +85,8 @@ Ok now what? Lets check out the directory.
 - `src`
   - We see client and server directory. Is this both a server and client app?
 
+Check out `package.json`
+
 ```json
 {
   "name": "awesome-app",
