@@ -1,4 +1,4 @@
-Cool CLI interface!
+Cool CLI interface! :sunglasses:
 
 ![Image of basis CLI](assets/basis.gif)
 
