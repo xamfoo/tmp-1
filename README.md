@@ -390,6 +390,9 @@ export default connect(mapStateToProps, mapDispatchToProps)(Shell);
 ```
 
 - We can probably use the shorthand for `mapDispatchToProps`:
+- Instead of passing layout to the component and dispatching based on it, we
+  could also handle the checking of the layout state in fetchConfig action. In
+  that case we do not need to pass in the layout state to this component.
 
 ```javascript
 const mapDispatchToProps = {
