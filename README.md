@@ -171,7 +171,7 @@ Check out `package.json`
 
 Now lets try running the app.
 
-```Shell
+```ShellSession
 > awesome-app@0.0.1 build /Volumes/xamusbfit/workspace/awesome-app
 > eslint config/*.js gulpfile.babel.js && gulp build:full
 
