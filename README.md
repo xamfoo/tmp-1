@@ -158,11 +158,60 @@ Check out `package.json`
 }
 ```
 
-- `npm run build` - seems like gulp is used here
-- `npm start`, `npm run dev`, `npm run prod` runs the bundled app
-- Would be nice if there is a continous compilation mode out of the box. Maybe
-  `npm start` can be used?
-- Defaults to mocha test runner. Would it be easy to switch to jest or jasmine?
-- `npm run coverage` :+1:
+- `scripts`
+  - `npm run build` - seems like gulp is used here
+  - `npm start`, `npm run dev`, `npm run prod` runs the bundled app
+  - Would be nice if there is a continous compilation mode out of the box. Maybe
+    `npm start` can be used?
+  - Defaults to mocha test runner. Would it be easy to switch to jest or jasmine?
+  - `npm run coverage` :+1:
+- `dependencies`
+  - react, redux and material-ui for the UI
+  - basis-server for server?
 
 Now lets try running the app.
+
+```Shell
+> awesome-app@0.0.1 build /Volumes/xamusbfit/workspace/awesome-app
+> eslint config/*.js gulpfile.babel.js && gulp build:full
+
+[00:49:00] Failed to load external module @babel/register
+[00:49:00] Requiring external module babel-register
+[33m[settings][39m Loaded environment settings for: [32mdefault, development, local, production[39m
+[00:49:01] Using gulpfile ~/awesome-app/gulpfile.babel.js
+[00:49:01] Starting 'build:full'...
+[00:49:01] Starting 'clean'...
+[00:49:01] Finished 'clean' after 64 ms
+[00:49:01] Starting 'prepare:build'...
+[00:49:01] Finished 'prepare:build' after 428 μs
+[00:49:01] Starting 'create:env-settings'...
+[00:49:01] Starting 'create:package-json'...
+[00:49:01] Starting 'lint:server'...
+[00:49:01] Starting 'copy:server:views'...
+[00:49:01] Starting 'copy:fonts'...
+[00:49:01] Starting 'create:server:theme'...
+[00:49:01] Starting 'lint:client'...
+[00:49:01] Finished 'create:package-json' after 61 ms
+[00:49:01] Finished 'create:env-settings' after 62 ms
+[00:49:02] Finished 'create:server:theme' after 870 ms
+[00:49:02] Starting 'sass:server'...
+[00:49:02] Finished 'lint:server' after 1.02 s
+[00:49:02] Starting 'compile:server'...
+[00:49:03] Finished 'sass:server' after 631 ms
+[00:49:03] Finished 'copy:server:views' after 1.52 s
+[00:49:03] Finished 'compile:server' after 646 ms
+[00:49:03] Finished 'lint:client' after 1.73 s
+[00:49:03] Starting 'bundle:client'...
+[00:49:04] Finished 'copy:fonts' after 3.12 s
+[00:49:04] Starting 'build:server'...
+[00:49:04] Finished 'build:server' after 32 μs
+[00:49:05] Finished 'bundle:client' after 2.14 s
+[00:49:05] Starting 'build:client'...
+[00:49:05] Finished 'build:client' after 3.06 μs
+[00:49:05] Starting 'build:all'...
+[00:49:05] Finished 'build:all' after 1.85 μs
+[00:49:05] Starting 'finalise'...
+[00:49:05] Finished 'finalise' after 1.89 ms
+[00:49:05] Finished 'build:full' after 3.98 s
+npm run build  7.80s user 0.67s system 106% cpu 7.941 total
+```
