@@ -79,7 +79,7 @@ Lets check out the directory.
 
 - `config` directory
   - webpack config found! Looks clean and simple.
-    - Highly recommend adding the following config to get source maps
+    - Highly recommend adding the following config to get source maps  
     `devtool: 'cheap-module-eval-source-map'`
   - Oh nginx configuration?
   - Should I mess with the various `settings.*.js`?
