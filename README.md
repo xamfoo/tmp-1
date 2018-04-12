@@ -272,7 +272,8 @@ initialise(modules, app);
 ```
 
 - What does `initialise` actually do?
-- Lets check out `<App />`;
+
+Lets check out `<App />`;
 
 `src/client/app.jsx`
 
