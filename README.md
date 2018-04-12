@@ -378,7 +378,7 @@ const mapStateToProps = state => ({
 export default connect(mapStateToProps, mapDispatchToProps)(Shell);
 ```
 
-- We can use the shorthand for `mapDispatchToProps`:
+- We can probably use the shorthand for `mapDispatchToProps`:
 
 ```javascript
 const mapDispatchToProps = {
@@ -386,3 +386,27 @@ const mapDispatchToProps = {
   onToggleDrawer: toggleDrawer,
 };
 ```
+
+`src/client/modules/shell/actions/fetchConfig.js`
+
+```JSX
+import axios from 'axios';
+
+import { core } from 'basis-client/modules';
+
+export default () => dispatch => (
+
+  axios.get('/config')
+       .then((res) => {
+
+         dispatch(core.actions.initialise(res.data));
+       })
+       .catch((err) => {
+
+         throw (err);
+       })
+);
+```
+
+- The catch block currently has the same result as not having the catch block.
+- Might want to dispatch an error action in the catch block.
