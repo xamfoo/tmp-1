@@ -173,7 +173,7 @@ Now lets try running the app.
 
 ```ShellSession
 > awesome-app@0.0.1 build ~/awesome-app
-> eslint config/*.js gulpfile.babel.js && gulp build:full "--watch"
+> eslint config/*.js gulpfile.babel.js && gulp build:full
 
 [00:47:57] Failed to load external module @babel/register
 [00:47:57] Requiring external module babel-register
