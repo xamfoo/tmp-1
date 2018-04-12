@@ -241,9 +241,13 @@ http://localhost:3000/
 - Watch mode to hot reload the UI would be time-saving. Currently build takes
   about 8 seconds + time to refresh (webpack)
 - `npm run dev` seems to do nothing.
-- NODE_ENV is currently 'production' in npm start. Is there a way to run in
+- NODE_ENV is currently 'production' in `npm start`. Is there a way to run in
   development mode?
-- PropTypes doesn't seem to be working. Could be because of production mode.
+  - PropTypes doesn't seem to be throwing errors when required. Could be because
+    of production mode?
+  - Also, JSS classes are in production mode. In non-production, the classes
+    would contain the React Component name which makes it easier to debug when
+    inspecting the DOM.
 
 Now lets take a look at the UI code.
 
