@@ -240,6 +240,45 @@ http://localhost:3000/
 
 Now lets take a look at the UI code and see if we can change something.
 
-src/client/CssBaseline
+`src/client/index.js`
+
+```JSX
+import React from 'react';
+import { initialise } from 'basis-client';
+import { core } from 'basis-client/modules';
+
+import theme from './../../config/theme';
+import shell from './modules/shell';
+import App from './app';
+
+const modules = [
+  core.initialise(theme),
+  shell.initialise()
+];
+const app = <App />;
+
+initialise(modules, app);
 ```
+
+- What does initialise actually do?
+- Lets check out `<App />`;
+
+`src/client/app.jsx`
+
+```JSX
+import React from 'react';
+import CssBaseline from 'material-ui/CssBaseline';
+import { RootRouter } from 'basis-client/components';
+
+export default ({ routes }) => (
+
+  <div>
+    <CssBaseline />
+    <RootRouter routes={routes} />
+  </div>
+);
 ```
+
+- Might be a good idea to leave a comment about `CssBaseline` here.
+- `RootRouter` is from `basis-client/components`. Which router is it referring
+  to? If it is react-router which version is it?
