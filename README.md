@@ -173,7 +173,7 @@ Now lets try running the app.
 
 **npm run build**
 
-```ShellSession
+```
 > awesome-app@0.0.1 build ~/awesome-app
 > eslint config/*.js gulpfile.babel.js && gulp build:full
 
@@ -218,6 +218,8 @@ Now lets try running the app.
 npm run build  7.97s user 0.71s system 106% cpu 8.123 total
 ```
 
+- Build steps may seem a little overwhelming at first.
+
 **npm start**
 
 ```
@@ -234,3 +236,6 @@ http://localhost:3000/
 ![Screenshot of webpage](assets/basis-client-screenshot.png)
 
 - Clean UI. The navigation header and slide-out drawer looks good.
+- Watch mode to hot reload the UI would be nice. (webpack)
+
+Now lets try adding some UI code. How about a todo app?
