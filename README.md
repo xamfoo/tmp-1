@@ -85,7 +85,8 @@ Lets check out the directory.
   - Should I mess with the various `settings.*.js`?
 - `gulpfile.babel.js` gulpfile written in ES6 :)
 - `src`
-  - We see client and server directory. Is this both a server and client app?
+  - We see both a client and server directory. Is this both a server and client
+    app?
 
 Check out `package.json`
 
