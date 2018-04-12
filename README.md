@@ -260,7 +260,7 @@ const app = <App />;
 initialise(modules, app);
 ```
 
-- What does initialise actually do?
+- What does `initialise` actually do?
 - Lets check out `<App />`;
 
 `src/client/app.jsx`
@@ -282,3 +282,6 @@ export default ({ routes }) => (
 - Might be a good idea to leave a comment about `CssBaseline` here.
 - `RootRouter` is from `basis-client/components`. Which router is it referring
   to? If it is react-router which version is it?
+- Would be good if we have a larger app example (in this or another repo) for
+  reference.
+- How should we structure the application into modules?
